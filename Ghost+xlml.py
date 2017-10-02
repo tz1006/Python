@@ -34,7 +34,7 @@ page,res = ghost.open(url, user_agent=ua)
 # lxml
 
 html = lxml.html.fromstring(ghost.content)
-time = html.xpath('//body/div[2]/div[2]/form[2]/div/div[2]/table/tbody/tr/p')
+time = html.xpath('//body/div[2]/div[2]/form[2]/div/div[2]/table/tbody/text()')
 
 
 
